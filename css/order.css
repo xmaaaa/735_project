@@ -1,0 +1,115 @@
+.bgimg1 {
+    background: linear-gradient(#d0efe5 50px, rgba(255, 255, 255, 0.512), rgba(32, 32, 32, 0.49)), url(../imgs/order.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 40%;
+    border-radius: 45px;
+    position: relative;
+}
+.categories {
+    margin-top: 3%;
+    margin-left: 25%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.footer {
+    margin-top: 3%;
+}
+.categories fieldset {
+    margin: 2%;
+    padding: 2%;
+    border-radius: 20px;
+    background-color: #3333334d;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-style: none;
+}
+.categories legend {
+    font-size: larger;
+    padding-top: 30px;
+    text-shadow: #040404 1px 1px 1px;
+    text-decoration: underline;
+}
+.categories fieldset:hover {
+    background-color: #a5a5a5;
+}
+#clearBtn {
+    width: 30%;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #b6b6b6;
+    transition: 0.5s ease;
+}
+#clearBtn:hover {
+    background-color: #8a8a8a;
+}
+#orderNowbtn, #checkOut {
+    width: 30%;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #b6b6b6;
+    transition: 0.5s ease;
+}
+#checkOut {
+    width: 40%;
+}
+#orderNowbtn:hover, #checkOut:hover {
+    background-color: #7c7c7c;
+}
+.category3 {
+    position: relative;
+    left: 40%;
+}
+.customerInfo {
+    margin-top: 3%;
+    margin-left: 25%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+select, input {
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+.infobtns1 {
+    position: relative;
+    left: 60%;
+    width: 45%;
+}
+
+@media screen and (max-width: 768px) {
+    .bgimg1 {
+        height: 30%;
+        border-radius: 20px;
+    }
+    .categories, .customerInfo {
+        margin-left: 5%;
+        grid-template-columns: 100%;
+    }
+    .categories fieldset, .customerInfo fieldset {
+        width: 90%;
+        margin: 5% auto;
+    }
+    .footer {
+        margin-top: 5%;
+    }
+    #clearBtn, #orderNowbtn, #checkOut {
+        width: 80%;
+        margin: 10px auto;
+    }
+    .category3 {
+        left: 0;
+    }
+    .infobtns1 {
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+    h1 {
+        padding-top: 10%;
+        font-size: large;
+    }
+}

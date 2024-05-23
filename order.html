@@ -1,0 +1,174 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANKA GROCERS</title>
+     
+    <!-- css files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+    <section id="nav_sec">
+        <nav class="nav_bar">
+            <div class="modal1">
+                <div class="nav">
+                    <div class="logo">
+                        <a href="home.html">
+                            <img src="imgs/Main logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <ul>
+                        <li class="list1">
+                            <a href="home.html">
+                                <span class="navTitle">Home</span>
+                            </a>
+                        </li>
+                        <li class="list1">
+                            <a href="aboutus.html">
+                                <span class="navTitle">About Us</span>
+                            </a>
+                        </li>
+                        <input type="checkbox" id="sub_chck">
+                        <li class="list products">
+                            <label for="sub_chck">
+                                <a>
+                                    <span class="navTitle">Products</span>
+                                </a>
+                            </label>
+                            <ul class="sub_menu1">
+
+                                <li class="list1" id="sub_list"><a href="dairy.html">Dairy Products</a></li>
+                                <li class="list1" id="sub_list"><a href="veg.html">Vegetables</a></li>
+                                <li class="list1" id="sub_list"><a href="cosmetics.html">Cosmetics and Skin care products</a></li>
+                            </ul>
+                        </li>
+                        <li class="list1 active">
+                            <a href="order.html">
+                                <span class="navTitle">Order Now</span>
+                            </a>
+                        </li>
+                        <li class="list1">
+                            <a href="login.html">
+                                <span class="navTitle">Loyalty Registration</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section id="bgimgsec">
+        <div class="bgimg1">
+            <h1 id="homeh1"><marquee>Order Now !!</marquee></h1>
+        </div>
+    </section>
+    <section class="categories">
+        <fieldset class="category1">
+            <legend>Dairy Products</legend>
+            <label for="dairylbl">Dairy Products : </label>
+            <select name="dairylbl" id="">
+                <option value="">Milk</option>
+                <option value="">Yogurt</option>
+                <option value="">Curd</option>
+                <option value="">Condensed milk</option>
+                <option value="">Cheese</option>
+            </select><br> <br>
+            <label for="quality">Quantity : </label>
+            <input type="number" min="0" placeholder="0">
+            <br><br>
+            <label for="currentPrice">Current Price(LKR) : </label>
+            <input type="number" min="0" readonly value="0">
+            <br><br>
+            <button id="clearBtn">Clear</button>
+            <button id="orderNowbtn">Order Now</button>
+        </fieldset>
+        <fieldset class="category2">
+            <legend>Vegetables and Fruits</legend>
+            <label for="veglbl">Vegetables and Fruits : </label>
+            <select name="veglbl" id="">
+                <option value="">Potato</option>
+                <option value="">Tomatos</option>
+                <option value="">Pumpkin</option>
+                <option value="">Carrots</option>
+                <option value="">Beetroot</option>
+                <option value="">Cabbage</option>
+            </select><br> <br>
+            <label for="quality">Quantity : </label>
+            <input type="number" min="0" placeholder="0">
+            <br><br>
+            <label for="currentPrice">Current Price(LKR) : </label>
+            <input type="number" min="0" readonly value="0">
+            <br><br>
+            <button id="clearBtn">Clear</button>
+            <button id="orderNowbtn">Order Now</button>
+        </fieldset>
+        <fieldset class="category3">
+            <legend>Cosmetics and Skin care product Page </legend>
+            <label for="coslbl">Cosmetics and Skin care product Page : </label>
+            <select name="coslbl" id="">
+                <option value="">Mascara</option>
+                <option value="">Eyeliner</option>
+                <option value="">Foundation</option>
+                <option value="">Highlighter</option>
+                <option value="">Powder</option>
+                <option value="">Nail Polish</option>
+            </select><br> <br>
+            <label for="quality">Quantity : </label>
+            <input type="number" min="0" placeholder="0">
+            <br><br>
+            <label for="currentPrice">Current Price(LKR) : </label>
+            <input type="number" min="0" readonly value="0">
+            <br><br>
+            <button id="clearBtn">Clear</button>
+            <button id="orderNowbtn">Order Now</button>
+        </fieldset>
+    </section>
+    <section class="categories">
+        <fieldset class="customerInfo">
+            <legend>Order Details</legend>
+            <label for="name">Name : </label>
+            <input type="text" placeholder="Enter your name">
+            <label for="address">Address : </label>
+            <input type="text" placeholder="Enter your address">
+            <label for="contact">Contact Number : </label>
+            <input type="text" placeholder="Enter your contact number">
+            <label for="email">Email : </label>
+            <input type="email" placeholder="Enter your email">
+            <label for="delivery">Delivery Date : </label>
+            <input type="date">
+            <label for="delivery">Delivery Method : </label>
+            <select name="delivery" id="">
+                <option value="">Pickup</option>
+                <option value="">Delivery</option>
+            </select>
+            <label for="delivery">Payment Method : </label>
+            <select name="delivery" id="">
+                <option value="">Cash</option>
+                <option value="">Card</option>
+            </select>
+            <button id="clearBtn" class="infobtns1">Clear</button>
+            <button id="checkOut" class="infobtns2">Check Out</button>
+        </fieldset>
+    </section>
+    <section>
+        <footer class="footer">
+            <div class="footercontent">
+                <div class="docs">
+                    <ol>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ol>
+                </div>
+                <div class="copyrights">&copy; 2024 Randil Senevirathne. All rights reserved.</div>
+                <div class="socials">
+                    <a href="#"><img src="imgs/facebookpng.png" alt="" id="fabooklogo" class="medialogos"></a>
+                    <a href="#"><img src="imgs/insta.png" alt="" id="instalogo" class="medialogos"></a>
+                    <a href="#"><img src="imgs/whatsapp.png" alt="" id="whstapplogo" class="medialogos"></a>
+                    <a href="#"><img src="imgs/email.png" alt="" id="emaillogo" class="medialogos"></a>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
